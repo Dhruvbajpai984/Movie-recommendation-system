@@ -34,3 +34,7 @@ Unlike a basic system with fixed recommendations, this project uses a similarity
 1. Install required libraries:
    ```bash
    pip install pandas scikit-learn
+## ScreenShots
+<img width="1470" height="956" alt="Screenshot 2026-03-24 at 11 35 13 AM" src="https://github.com/user-attachments/assets/c6d46054-7b42-4b4c-aa6c-5d561ea9ca1d" />
+<img width="1470" height="956" alt="Screenshot 2026-03-24 at 11 35 20 AM" src="https://github.com/user-attachments/assets/497c8950-f24d-4ea9-9aea-5ac97fc742d7" />
+
