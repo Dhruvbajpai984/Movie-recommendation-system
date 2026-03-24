@@ -41,15 +41,19 @@ It suggests similar movies based on their genres using **cosine similarity**.
 
 ---
 
-## Installation
+##  Limitations
+- Uses a small dataset
+- Recommendations based only on category
+- No real-time data
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/movie-recommender.git
+##  Future Improvements
+- Integrate larger datasets (IMDb/TMDB)
+- Add movie ratings and descriptions
+- Build a web interface using Streamlit
 
 ---
 
-## 
+##
 
 
 
