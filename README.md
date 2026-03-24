@@ -1,40 +1,16 @@
-#  Movie Recommendation System (ML Based)
-
-##  Project Description
-This project is a simple Movie Recommendation System built using Python and basic Machine Learning concepts.  
-It recommends movies based on similarity in their genres.
-
-Unlike a basic system with fixed recommendations, this project uses a similarity measure to suggest movies dynamically.
-
----
-
-##  How it Works
-- A small dataset of movies and their genres is created.
-- The genre text is converted into numerical form using CountVectorizer.
-- Cosine Similarity is used to find similarity between movies.
-- When the user enters a movie name, the system recommends similar movies.
-
----
-
-##  Machine Learning Concepts Used
-- Feature Extraction (CountVectorizer)
-- Similarity Measurement (Cosine Similarity)
-- Basic Recommendation System
-
----
-
-##  Technologies Used
-- Python
-- Pandas
-- Scikit-learn
-
----
-
-##  How to Run
-1. Install required libraries:
-   ```bash
-   pip install pandas scikit-learn
-## ScreenShots
-<img width="1470" height="956" alt="Screenshot 2026-03-24 at 11 35 13 AM" src="https://github.com/user-attachments/assets/c6d46054-7b42-4b4c-aa6c-5d561ea9ca1d" />
-<img width="1470" height="956" alt="Screenshot 2026-03-24 at 11 35 20 AM" src="https://github.com/user-attachments/assets/497c8950-f24d-4ea9-9aea-5ac97fc742d7" />
-
+# Movie Recommendation System (Python)
+​A simple, interactive command-line interface (CLI) that suggests similar movies based on a user's input. This project demonstrates the use of Python dictionaries, loops, and basic user-input handling.
+​## Features
+​Curated Suggestions: Provides a list of three similar titles for every movie in the database.
+​Case-Insensitive Search: Users can type "AVENGERS" or "avengers" and still get results.
+​Interactive Loop: Allows users to perform multiple searches without restarting the script.
+​Clean Interface: Simple text-based output for quick recommendations.
+​## How It Works
+​The system operates on a predefined dictionary where the keys are the movies the user searches for, and the values are lists of recommended titles.
+​### Logic Flow:
+​Displays the list of available movies to the user.
+​Prompts the user for a movie name.
+​Converts input to lowercase to match dictionary keys.
+​If found, it iterates through the associated list and prints the recommendations.
+​Asks the user if they wish to continue or exit.
+​## Usage
