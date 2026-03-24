@@ -34,3 +34,8 @@ It uses a basic dictionary-based approach where movies and their related recomme
 3. Run the file using:
    ```bash
    python movie.py
+
+---
+
+## ScreenShot
+<img width="666" height="673" alt="Screenshot 2026-03-24 at 12 00 14 PM" src="https://github.com/user-attachments/assets/b1229417-2077-4e70-9c97-d5ab82a4d524" />
