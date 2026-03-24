@@ -39,6 +39,7 @@ It suggests similar movies based on their genres using **cosine similarity**.
 <img width="711" height="861" alt="Screenshot 2026-03-24 at 2 17 14 PM" src="https://github.com/user-attachments/assets/38584416-5bf3-40c4-9413-d216f792a834" />
 <img width="612" height="329" alt="Screenshot 2026-03-24 at 2 17 36 PM" src="https://github.com/user-attachments/assets/a0f484ce-747e-4732-b322-d7e6bfa33d9e" />
 
+---
 
 ## Installation
 
