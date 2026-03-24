@@ -39,3 +39,10 @@ It suggests similar movies based on their genres using **cosine similarity**.
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/movie-recommender.git
+
+---
+
+## ScreenShots
+<img width="711" height="861" alt="Screenshot 2026-03-24 at 2 17 14 PM" src="https://github.com/user-attachments/assets/c6aee827-ec40-473f-ba39-4a6598ee8e96" />
+<img width="612" height="329" alt="Screenshot 2026-03-24 at 2 17 36 PM" src="https://github.com/user-attachments/assets/86ede785-4f36-4a8e-b0f6-9725af56b4f1" />
+
