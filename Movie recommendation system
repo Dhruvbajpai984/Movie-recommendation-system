@@ -1,54 +1,32 @@
-import pandas as pd
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+print("Movie Recommendation System")
 
-print("Movie Recommendation System (ML Based)\n")
-
-# Step 1: Create dataset
-data = {
-    "movie": [
-        "avengers", "iron man", "thor", "captain america",
-        "spiderman", "venom", "batman", "superman",
-        "interstellar", "inception", "gravity", "martian"
-    ],
-    "genre": [
-        "action superhero", "action superhero", "action superhero", "action superhero",
-        "action superhero", "action villain", "action dark", "action hero",
-        "sci-fi space", "sci-fi mind", "sci-fi space", "sci-fi space"
-    ]
+# simple movie list
+movies = {
+    "avengers": ["iron man", "thor", "captain america"],
+    "spiderman": ["venom", "batman", "superman"],
+    "harry potter": ["lord of the rings", "narnia", "hobbit"],
+    "fast and furious": ["need for speed", "rush", "transformers"],
+    "interstellar": ["inception", "gravity", "martian"]
 }
 
-df = pd.DataFrame(data)
-
-# Step 2: Convert text (genre) into numbers
-cv = CountVectorizer()
-matrix = cv.fit_transform(df["genre"])
-
-# Step 3: Find similarity
-similarity = cosine_similarity(matrix)
-
-# Step 4: Recommendation function
-def recommend(movie_name):
-    movie_name = movie_name.lower()
-
-    if movie_name not in df["movie"].values:
-        print("Movie not found")
-        return
-
-    index = df[df["movie"] == movie_name].index[0]
-    scores = list(enumerate(similarity[index]))
-
-    # sort based on similarity
-    scores = sorted(scores, key=lambda x: x[1], reverse=True)
-
-    print("\nRecommended movies:")
-    for i in scores[1:4]:
-        print(df.iloc[i[0]]["movie"])
-
-# Step 5: User input
 while True:
-    name = input("\nEnter a movie: ")
-    recommend(name)
+    print("\nMovies available:")
+    
+    # showing movies
+    for m in movies:
+        print(m)
+
+    name = input("\nEnter movie name: ")
+    name = name.lower()
+
+    # checking movie
+    if name in movies:
+        print("Recommended movies are:")
+        
+        for i in movies[name]:
+            print(i)
+    else:
+        print("Movie not in list")
 
     ch = input("\nTry again? (yes/no): ")
     if ch != "yes":
