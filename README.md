@@ -1,41 +1,41 @@
-#  Movie Recommendation System
+# Movie Recommendation System (ML-Based)
 
-##  Project Description
-This is a simple Movie Recommendation System built using Python.  
-The program suggests similar movies based on the user's input.
-
-It uses a basic dictionary-based approach where movies and their related recommendations are stored.
+A simple **content-based movie recommendation system** built using Python and machine learning techniques.  
+It suggests similar movies based on their genres using **cosine similarity**.
 
 ---
 
-##  How it Works
-- The user enters the name of a movie.
-- The system checks if the movie exists in the database.
-- If found, it displays a list of recommended movies.
-- If not found, it shows an error message.
+## Features
+
+- Recommend movies based on user input
+- Uses **TF-IDF vectorization** for better text representation
+- Computes similarity using **cosine similarity**
+- Simple and interactive command-line interface
+- Beginner-friendly machine learning project
 
 ---
 
-##  AI Concept Used
-- Basic Recommendation System
-- Rule-Based System
-- Knowledge Representation using dictionary
+## How It Works
+
+1. A small dataset of movies and their categories (genres) is created.
+2. Text data is converted into numerical form using **TF-IDF Vectorizer**.
+3. Cosine similarity is calculated between all movies.
+4. When a user enters a movie name:
+   - The system finds similar movies
+   - Displays the top 3 recommendations
 
 ---
 
-##  Technologies Used
-- Python
+## Tech Stack
+
+- Python 
+- Pandas
+- Scikit-learn
 
 ---
 
-##  How to Run
-1. Install Python on your system
-2. Copy the code into a `.py` file (example: `movie.py`)
-3. Run the file using:
-   ```bash
-   python movie.py
+## Installation
 
----
-
-## ScreenShot
-<img width="666" height="673" alt="Screenshot 2026-03-24 at 12 00 14 PM" src="https://github.com/user-attachments/assets/b1229417-2077-4e70-9c97-d5ab82a4d524" />
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/movie-recommender.git
