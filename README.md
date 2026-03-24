@@ -53,7 +53,11 @@ It suggests similar movies based on their genres using **cosine similarity**.
 
 ---
 
-##
+##  Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Dhruvbajpai984/movie-recommender.git
 
 
 
