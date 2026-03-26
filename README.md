@@ -14,7 +14,7 @@ The project is built using Python and the following libraries:
 - **Pandas:** For data manipulation and storage.
 - **Scikit-learn:** For Machine Learning (TF-IDF Vectorizer and Cosine Similarity).
 
-
+---
 
 ## Installation
 To run this project locally, you must have Python installed. Install the required dependencies using pip:
@@ -33,14 +33,15 @@ The system starts with a dataset containing movie titles and their associated ca
 2. Feature Extraction (TF-IDF)
 Since machines cannot understand raw text, we use the TF-IDF (Term Frequency-Inverse Document Frequency) method:
 
-Term Frequency (TF): Measures how often a word appears in a specific movie category.
+ Term Frequency (TF): Measures how often a word appears in a specific movie category.
 
-Inverse Document Frequency (IDF): Reduces the weight of common words (like "action") and highlights unique, descriptive keywords (like "interstellar").
+ Inverse Document Frequency (IDF): Reduces the weight of common words (like "action") and highlights unique, descriptive keywords (like "interstellar").
 
 3. Calculating Similarity
 The system computes the Cosine Similarity between movie vectors. This measures the cosine of the angle between two points in a multi-dimensional space.
 The Similarity Formula:
-                  similarity = cos(theta) = (A * B) / (||A|| ||B||)
+
+   similarity = cos(theta) = (A * B) / (||A|| ||B||)
 
 Score of 1.0: Perfect match (identical categories).
 
