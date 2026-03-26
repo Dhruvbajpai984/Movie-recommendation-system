@@ -1,63 +1,52 @@
 # Movie Recommendation System (ML-Based)
 
-A simple **content-based movie recommendation system** built using Python and machine learning techniques.  
-It suggests similar movies based on their genres using **cosine similarity**.
+A content-based movie recommendation engine built using Python. This project utilizes Natural Language Processing (NLP) and Machine Learning techniques to suggest movies based on genre and category similarity.
 
 ---
 
-## Features
-
-- Recommend movies based on user input
-- Uses **TF-IDF vectorization** for better text representation
-- Computes similarity using **cosine similarity**
-- Simple and interactive command-line interface
-- Beginner-friendly machine learning project
+## 📖 Overview
+This project demonstrates how text-based data can be converted into numerical vectors to find relationships between items. It is designed to solve the problem of manual discovery by providing automated suggestions based on a user's favorite title.
 
 ---
 
-## How It Works
+## 🛠️ Tech Stack & Prerequisites
+The project is built using Python and the following libraries:
+- **Pandas:** For data manipulation and storage.
+- **Scikit-learn:** For Machine Learning (TF-IDF Vectorizer and Cosine Similarity).
 
-1. A small dataset of movies and their categories (genres) is created.
-2. Text data is converted into numerical form using **TF-IDF Vectorizer**.
-3. Cosine similarity is calculated between all movies.
-4. When a user enters a movie name:
-   - The system finds similar movies
-   - Displays the top 3 recommendations
 
----
 
-## Tech Stack
+## Installation
+To run this project locally, you must have Python installed. Install the required dependencies using pip:
 
-- Python 
-- Pandas
-- Scikit-learn
-
----
-
-## ScreenShot
-
-<img width="711" height="861" alt="Screenshot 2026-03-24 at 2 17 14 PM" src="https://github.com/user-attachments/assets/38584416-5bf3-40c4-9413-d216f792a834" />
-<img width="612" height="329" alt="Screenshot 2026-03-24 at 2 17 36 PM" src="https://github.com/user-attachments/assets/a0f484ce-747e-4732-b322-d7e6bfa33d9e" />
-
----
-
-##  Limitations
-- Uses a small dataset
-- Recommendations based only on category
-- No real-time data
-
-##  Future Improvements
-- Integrate larger datasets (IMDb/TMDB)
-- Add movie ratings and descriptions
-- Build a web interface using Streamlit
-
----
-
-##  Installation
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/Dhruvbajpai984/movie-recommender.git
+pip install pandas scikit-learn
+```
 
+---
 
+## How it works
+This project is a Content-Based Recommender System. It suggests movies by calculating the mathematical similarity between the "features" (categories/genres) of different films.
+1. Data Representation
+The system starts with a dataset containing movie titles and their associated categories. Before analysis, the text is normalized (lowercase and stripped of spaces) to ensure consistent matching.
+
+2. Feature Extraction (TF-IDF)
+Since machines cannot understand raw text, we use the TF-IDF (Term Frequency-Inverse Document Frequency) method:
+
+Term Frequency (TF): Measures how often a word appears in a specific movie category.
+
+Inverse Document Frequency (IDF): Reduces the weight of common words (like "action") and highlights unique, descriptive keywords (like "interstellar").
+
+3. Calculating Similarity
+The system computes the Cosine Similarity between movie vectors. This measures the cosine of the angle between two points in a multi-dimensional space.
+The Similarity Formula:
+                  similarity = cos(theta) = (A * B) / (||A|| ||B||)
+
+Score of 1.0: Perfect match (identical categories).
+
+Score of 0.0: No similarity.
+
+The system identifies the top 3 movies with the highest scores and displays them to the user.
+
+---
 
