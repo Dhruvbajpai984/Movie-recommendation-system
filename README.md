@@ -4,12 +4,12 @@ A content-based movie recommendation engine built using Python. This project uti
 
 ---
 
-## 📖 Overview
+##  Overview
 This project demonstrates how text-based data can be converted into numerical vectors to find relationships between items. It is designed to solve the problem of manual discovery by providing automated suggestions based on a user's favorite title.
 
 ---
 
-## 🛠️ Tech Stack & Prerequisites
+##  Tech Stack & Prerequisites
 The project is built using Python and the following libraries:
 - **Pandas:** For data manipulation and storage.
 - **Scikit-learn:** For Machine Learning (TF-IDF Vectorizer and Cosine Similarity).
