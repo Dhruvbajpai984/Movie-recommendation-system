@@ -60,3 +60,28 @@ python recommender.py
 3. When prompted, enter a movie name (e.g., inception or avengers).
 
 4. The system will output the top 3 movies you might like based on the database.
+
+---
+
+## Screenshot
+
+<img width="810" height="721" alt="Screenshot 2026-03-26 at 7 49 04 PM" src="https://github.com/user-attachments/assets/d0aa87bb-b24d-4f78-be8f-b574dee78b59" />
+<img width="644" height="359" alt="Screenshot 2026-03-26 at 7 50 21 PM" src="https://github.com/user-attachments/assets/4b9c0cba-d174-468d-a65e-03f27095ee53" />
+
+---
+
+## Project Structure
+1. recommender.py - The main Python script containing the logic.
+
+2. README.md - Documentation and setup guide.
+
+3. requirements.txt - List of Python dependencies.
+
+---
+
+## Limitations & Future Scope
+1. Exact Matches: The current version requires exact string input (handled by .lower().strip()).
+
+2. Data Scaling: Future updates will transition from a manual dictionary to a larger CSV dataset (e.g., TMDb 5000 Movies).
+
+3. Fuzzy Matching: Planning to implement the thefuzz library to handle user typos.
