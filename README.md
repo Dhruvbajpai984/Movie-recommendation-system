@@ -52,10 +52,10 @@ The system identifies the top 3 movies with the highest scores and displays them
 ---
 
 ## Usage Instructions
-1. Clone this repository or download the recommender.py file.
+1. Clone this repository or download the python movie_recommender.py file.
 
 2. Run the script in your terminal:
-python recommender.py
+python movie_recommender.py
 
 3. When prompted, enter a movie name (e.g., inception or avengers).
 
@@ -71,7 +71,7 @@ python recommender.py
 ---
 
 ## Project Structure
-1. recommender.py - The main Python script containing the logic.
+1. movie_recommender.py - The main Python script containing the logic.
 
 2. README.md - Documentation and setup guide.
 
