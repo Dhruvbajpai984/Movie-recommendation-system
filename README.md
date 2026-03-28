@@ -63,12 +63,18 @@ python movie_recommender.py
 
 ---
 
-## Screenshot
+## Screenshot(code)
 
 <img width="810" height="721" alt="Screenshot 2026-03-26 at 7 49 04 PM" src="https://github.com/user-attachments/assets/d0aa87bb-b24d-4f78-be8f-b574dee78b59" />
 <img width="644" height="359" alt="Screenshot 2026-03-26 at 7 50 21 PM" src="https://github.com/user-attachments/assets/4b9c0cba-d174-468d-a65e-03f27095ee53" />
 
 ---
+
+## Screenshot(Result)
+<img width="1632" height="552" alt="image" src="https://github.com/user-attachments/assets/acf39745-8364-49a8-9f7b-a8918984a334" />
+
+---
+
 
 ## Project Structure
 1. movie_recommender.py - The main Python script containing the logic.
